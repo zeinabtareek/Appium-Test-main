@@ -1,3 +1,13 @@
+
+import os
+
+# Prevent tkinter import in production environments like Railway
+if "RAILWAY_ENVIRONMENT" not in os.environ:
+    try:
+        import tkinter
+    except ImportError:
+        pass  # Safely ignore if tkinter is missing
+
 from appium.webdriver.webdriver import AppiumOptions
 from login_automation import login_webview_automation
 from home_automation import home_webview_automation
