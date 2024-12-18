@@ -13,7 +13,7 @@ def home_webview_automation(appium_driver:webdriver):
     # Initialize Appium driver
     print("Connecting to Appium server...")
     driver = appium_driver
-    
+
     # Script logic
     try:
         # Example: Login page

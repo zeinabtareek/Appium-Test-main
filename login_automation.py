@@ -95,7 +95,7 @@ def click_refresh_button(driver):
         print("Page refreshed.")
     except Exception as e:
         print(f"Error clicking refresh button: {e}")
-    
+
 
 def refresh_view(driver):
     """Refreshes the WebView."""
